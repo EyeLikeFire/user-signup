@@ -1,0 +1,37 @@
+<! document <!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <form method="POST">
+        <label>
+            User name
+            <input name="name" type="text" value="{{name}}"/>
+        </label>
+        <span style="color:red;">{{valid_name}}</span>
+        <br>
+        <label>
+            Password
+            <input name="password" type="password" value="{{password}}"/>
+        </label>
+        <span style="color:red;">{{valid_password}}</span>
+        <br>
+        <label>
+            Verify Password
+            <input name="verify" type="password" value="{{verify}}"/>
+        </label>
+        <span style="color:red;">{{password_verify}}</span>
+        <br>
+        <label>
+            Email (Optional)
+            <input name="email" type="text" value="{{email}}"/>
+        </label>
+        <span style="color:red;">{{email_verify}}</span>
+        <br>
+        <input type="submit"/>
+
+    </form>
+
+
+</body>
+</html>
